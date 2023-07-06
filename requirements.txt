@@ -1,0 +1,4 @@
+beautifulsoup4
+#requests==0.22
+requests
+
