@@ -7,15 +7,19 @@ jobs:
     runs-on: ubuntu-latest # 우분투로최신버전 실행
     steps:
      # run 뒤에는 실제 작동하는 코드를 넣어야 한다
-    - name: hello world 출력!!
-      run: echo Hello, World!
-    - name: 디렉토리 출력!!
-      run: ls -al
-    - name: 파이썬 버전 출력!!
-      run: python -v
-      
+    #- name: hello world 출력!!
+    #  run: echo Hello, World!
+    #- name: 디렉토리 출력!!
+    #  run: ls -al
+    #- name: 파이썬 버전 출력!!
+    #  run: python -v
     - uses: actions/checkout@v2 # 파이썬 실행해줌
-    - name: 파이썬 실행!!
+    - name: 1. 파일 목록 출력
+      run: ls -al
+    - name: 2. 파이썬 패키지 확인
+      run: pip list
+    
+    - name: 3. 파이썬 실행!!
       run: python test.py
     #- name: 파이썬 파일찾기!!
     #  run: find / -name 'test.py'
