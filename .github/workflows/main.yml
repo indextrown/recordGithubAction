@@ -17,5 +17,7 @@ jobs:
     - uses: actions/checkout@v2 # 파이썬 실행해줌
     - name: 파이썬 실행!!
       run: python test.py
+    - name: 파이썬 파일찾기!!
+      run: find / -name 'test.py'
      
     
