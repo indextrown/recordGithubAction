@@ -13,6 +13,8 @@ jobs:
       run: ls -al
     - name: 파이썬 버전 출력!!
       run: python -v
+      
+    - uses: actions/checkout@v2 # 파이썬 실행해줌
     - name: 파이썬 실행!!
       run: python test.py
      
